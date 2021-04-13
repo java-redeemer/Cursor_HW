@@ -12,9 +12,10 @@ public class Triangle extends PlaneShape implements PerimeterMeasurable, AreaMea
 
     public Triangle(TwoDimensionalShape firstVertex, TwoDimensionalShape secondVertex, TwoDimensionalShape thirdVertex) {
         super(firstVertex, secondVertex, thirdVertex);
-        bottomSide = getArrayBetweenVertices().get(0).getDistance(getArrayBetweenVertices ().get(1));
-        leftSide = getArrayBetweenVertices().get(1).getDistance(getArrayBetweenVertices ().get(2));
-        rightSide = getArrayBetweenVertices().get(2).getDistance(getArrayBetweenVertices ().get(0));
+
+        bottomSide = firstVertex.getDistance (secondVertex);
+        leftSide = secondVertex.getDistance (thirdVertex);
+        rightSide = thirdVertex.getDistance (firstVertex);
     }
 
     @Override
