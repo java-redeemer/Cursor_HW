@@ -2,7 +2,7 @@
 *.class
 
 # Log file
-*.log
+#*.log
 
 # BlueJ files
 *.ctxt
@@ -46,3 +46,7 @@ out
 /Cursor_HW8/out/
 /Cursor_HW9/.idea/
 /Cursor_HW9/out/
+/Cursor_HW10/.idea/
+/Cursor_HW10/out/
+
+
